@@ -1,0 +1,13 @@
+QFitnessTimer is a simple stopwatch with a parameterable countdown.
+
+HOW TO INSTALL:
+
+1. Enter to the source code directory
+2. Type :
+
+# qmake ('qmake -spec macx-g++ -r' for os x system)
+# make (or make release)
+
+3. Run the application :
+
+# open QFitnessTimer.app (For os x system)
