@@ -1,0 +1,5 @@
+Makefile
+QFitnessTimer.app
+auto
+bin
+src/moc_*.cpp
