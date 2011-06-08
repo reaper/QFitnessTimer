@@ -3,3 +3,5 @@ QFitnessTimer.app
 auto
 bin
 src/moc_*.cpp
+*.user
+*.user.*
