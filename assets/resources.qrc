@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file alias="clock.wav">sounds/cuckoo_clock.wav</file>
+    </qresource>
+</RCC>

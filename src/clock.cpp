@@ -1,5 +1,6 @@
 #include "clock.h"
 #include <QtGui>
+#include <QSound>
 
 /* Main clock constructor
  */
@@ -14,7 +15,7 @@ Clock::Clock(QWidget *parent) : QLCDNumber(parent)
 Clock::Clock(ClockType type, QTimer *vTimer, QWidget *parent) : QLCDNumber(parent)
 {
   setupClock();
-
+  clockSound = Phonon::createPlayer(Phonon::NoCategory, Phonon::MediaSource(":/sounds/clock.wav"));
   clockType = type;
   timer = vTimer;
 
@@ -71,6 +72,7 @@ void Clock::displayDecrementTime()
   {
     disconnect(timer, SIGNAL(timeout()), this, SLOT(displayDecrementTime()));
     initializeCountDown(minCountDown, secCountDown);
+    clockSound->play();
   }
 }
 

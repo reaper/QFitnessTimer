@@ -4,6 +4,7 @@
 #include <QLCDNumber>
 #include <QTime>
 #include <QLineEdit>
+#include <Phonon>
 
 class Clock : public QLCDNumber
 {
@@ -28,6 +29,7 @@ private:
   QTime activeTime;
   int minCountDown;
   int secCountDown;
+  Phonon::MediaObject *clockSound;
 
 private slots:
   void displayCurrentTime();

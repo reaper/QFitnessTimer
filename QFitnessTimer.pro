@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT += core gui
+QT += core gui phonon
 VERSION = 0.1
 
 TARGET = QFitnessTimer
@@ -20,3 +20,6 @@ SOURCES += src/main.cpp src/home.cpp src/clock.cpp
 HEADERS += src/home.h src/clock.h
 
 FORMS    +=
+
+RESOURCES += \
+    assets/resources.qrc
